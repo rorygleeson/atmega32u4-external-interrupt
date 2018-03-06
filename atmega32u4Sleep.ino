@@ -40,7 +40,7 @@ void enterSleep(void)
 {
   
   /* Setup pin2 as an interrupt and attach handler. */
-  attachInterrupt(0, pin2Interrupt, HIGH);
+  attachInterrupt(0, pin2Interrupt, LOW);
   delay(100);
   set_sleep_mode(SLEEP_MODE_PWR_DOWN);
   sleep_enable();
